@@ -31,7 +31,7 @@
   "voice_reply_voice": false,
   "conversation_max_tokens": 2500,
   "expires_in_seconds": 3600,
-  "character_desc": "你的名字叫小米渣，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格活泼热情，表情包多。你需要认真的回复用户的问题。",
+  "character_desc": "你的名字叫小米渣，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。\n根据上下文给的逻辑回复一步一步的引导客人解决问题。\n如果上下文中没有答案，就回复'我需要找我老大来一起看看这个问题。'",
   "temperature": 0.2,
   "subscribe_msg": "感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。",
   "use_linkai": false,
