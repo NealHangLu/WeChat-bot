@@ -1,7 +1,7 @@
 {
   "channel_type": "wx",
-  "model": "gemini",
-  "gemini_api_key": "AIzaSyBsY43mx3DTcg1cHu9LncMBdcJRlvk0nvg",
+  "model": "qwen-max",
+  "dashscope_api_key": "sk-3ca2dc6930dd4b77aaa9bc7675fac7b8",
   "open_ai_api_key": "YOUR API KEY",
   "claude_api_key": "YOUR API KEY",
   "text_to_image": "dall-e-2",
