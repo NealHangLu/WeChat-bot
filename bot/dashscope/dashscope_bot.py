@@ -207,8 +207,8 @@ def query_with_context(query):
         there was an issue with the request or the Flask app returned an error.
     """
     try:
-        #url = "http://kb:5601/query?text=" + query  # Adjust URL if needed
-        url = "http://127.0.0.1:5601/query?text=" + query
+        url = "http://kb:5601/query?text=" + query  # Adjust URL if needed
+        #url = "http://127.0.0.1:5601/query?text=" + query
         response = requests.get(url)
         response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
         data = response.json()

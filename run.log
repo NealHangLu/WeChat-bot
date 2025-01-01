@@ -5644,3 +5644,7 @@ UnboundLocalError: local variable 'reply_content' referenced before assignment
 @Griffin：搞不定，来看一下！), receiver=@@b0b6f3c368f2f5088cadfb6e318db26a6aa348de824709a17ad2b1fbacda8bb1
 [INFO][2024-11-30 23:28:49][dashscope_bot.py:84] - [DASHSCOPE] query=[傲慢]
 [INFO][2024-11-30 23:28:57][dashscope_bot.py:84] - [DASHSCOPE] query=[脸红]
+[INFO][2024-12-01 22:32:04][app.py:19] - signal 2 received, exiting...
+[INFO][2024-12-01 22:32:04][config.py:234] - [Config] User datas saved.
+[INFO][2024-12-01 22:32:04][app.py:19] - signal 2 received, exiting...
+[INFO][2024-12-01 22:32:04][config.py:234] - [Config] User datas saved.
