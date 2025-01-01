@@ -209,12 +209,13 @@ def query_with_context(query):
     """
     try:
         #url = "http://kb:5601/query?text=" + query  # Adjust URL if needed
-        #url = "http://127.0.0.1:5601/query?text=" + query
+        url = "http://127.0.0.1:5680/query?text=" + query
         url = kburl+"/query?text=" + query
+        print('debug kbsearch url:',url)
         response = requests.get(url)
         response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
         data = response.json()
-        logger.debug("kb search result: ".format(data))
+        print("kb search result: ",data)
         if 'error' in data:
             return {"query": query, "context": "None","error": data['error']}
         return {"query": query, "context": data['result'],"error": "None"}

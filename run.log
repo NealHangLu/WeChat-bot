@@ -5648,3 +5648,168 @@ UnboundLocalError: local variable 'reply_content' referenced before assignment
 [INFO][2024-12-01 22:32:04][config.py:234] - [Config] User datas saved.
 [INFO][2024-12-01 22:32:04][app.py:19] - signal 2 received, exiting...
 [INFO][2024-12-01 22:32:04][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:18:43][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2025-01-01 11:18:43][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': 'qwen-max-latest', 'dashscope_api_key': 'sk-*****7b8', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_keyword': [''], 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2', 'AI-xr客服测试群'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': "你的名字叫小米，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。你是一个客服，不是AI机器人。\n根据上下文给的问题解决逻辑一步一步的引导客人解决问题。每次回复都引导用户做下一步操作或者询问，每次只可以引导一步，回复的输出要求简洁清楚，然后根据用户的反馈判断问题，按照给定的逻辑推理指导用户下一步。当你帮助用户解决了问题，可以回复一个可爱的表情包。如果用户投诉或者表现出情绪不满，你要安慰用户，表现出同理心 加一个挠头的表情包。\n如果上下文中没有答案，就回复'@Griffin 搞不定，来看一下！'", 'temperature': 0.2, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2025-01-01 11:18:43][config.py:223] - [Config] User datas loaded.
+[INFO][2025-01-01 11:18:43][plugin_manager.py:50] - Loading plugins config...
+[INFO][2025-01-01 11:18:43][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2025-01-01 11:18:43][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2025-01-01 11:18:43][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2025-01-01 11:18:43][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为7104。
+[INFO][2025-01-01 11:18:43][godcmd.py:210] - [Godcmd] inited
+[INFO][2025-01-01 11:18:43][keyword.py:40] - [keyword] {}
+[INFO][2025-01-01 11:18:43][keyword.py:42] - [keyword] inited.
+[INFO][2025-01-01 11:18:43][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2025-01-01 11:18:43][role.py:69] - [Role] inited
+[INFO][2025-01-01 11:18:43][dungeon.py:56] - [Dungeon] inited
+[INFO][2025-01-01 11:18:43][hello.py:38] - [Hello] inited
+[INFO][2025-01-01 11:18:43][finish.py:23] - [Finish] inited
+[INFO][2025-01-01 11:19:18][wechat_channel.py:134] - Wechat login success, user_id: @1cd0469888e65a51682054e9563d8414788d7f8e20c262bb73d0465fafb5c6b8, nickname: neal
+[INFO][2025-01-01 11:19:35][bridge.py:69] - create bot dashscope for chat
+[INFO][2025-01-01 11:19:35][dashscope_bot.py:84] - [DASHSCOPE] query=按钮不工作了怎么办
+[INFO][2025-01-01 11:19:43][wechat_channel.py:218] - [WX] sendMsg=Reply(type=TEXT, content=@NL
+请检查按钮是否被卡住或有异物阻挡。如果有的话，请清除异物并尝试再次使用按钮。如果没有，请告诉我更多关于这个按钮和设备的信息。), receiver=@@73288959331adcb7133ed1585c1f7db85837d1fae042dee0a08d98ad8c7e643f
+[INFO][2025-01-01 11:22:18][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:22:18][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:22:21][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:22:21][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:22:22][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2025-01-01 11:22:22][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': 'qwen-max-latest', 'dashscope_api_key': 'sk-*****7b8', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_keyword': [''], 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2', 'AI-xr客服测试群'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': "你的名字叫小米，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。你是一个客服，不是AI机器人。\n根据上下文给的问题解决逻辑一步一步的引导客人解决问题。每次回复都引导用户做下一步操作或者询问，每次只可以引导一步，回复的输出要求简洁清楚，然后根据用户的反馈判断问题，按照给定的逻辑推理指导用户下一步。当你帮助用户解决了问题，可以回复一个可爱的表情包。如果用户投诉或者表现出情绪不满，你要安慰用户，表现出同理心 加一个挠头的表情包。\n如果上下文中没有答案，就回复'@Griffin 搞不定，来看一下！'", 'temperature': 0.2, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2025-01-01 11:22:22][config.py:223] - [Config] User datas loaded.
+[INFO][2025-01-01 11:22:22][plugin_manager.py:50] - Loading plugins config...
+[INFO][2025-01-01 11:22:22][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2025-01-01 11:22:22][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2025-01-01 11:22:22][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2025-01-01 11:22:22][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为2016。
+[INFO][2025-01-01 11:22:22][godcmd.py:210] - [Godcmd] inited
+[INFO][2025-01-01 11:22:22][keyword.py:40] - [keyword] {}
+[INFO][2025-01-01 11:22:22][keyword.py:42] - [keyword] inited.
+[INFO][2025-01-01 11:22:22][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2025-01-01 11:22:22][role.py:69] - [Role] inited
+[INFO][2025-01-01 11:22:22][dungeon.py:56] - [Dungeon] inited
+[INFO][2025-01-01 11:22:22][hello.py:38] - [Hello] inited
+[INFO][2025-01-01 11:22:22][finish.py:23] - [Finish] inited
+[INFO][2025-01-01 11:22:43][wechat_channel.py:134] - Wechat login success, user_id: @872cd86b922628559750764e6b8fe5d4ab8d8306783fa7b617a44a20dc6c4bc2, nickname: neal
+[INFO][2025-01-01 11:22:55][bridge.py:69] - create bot dashscope for chat
+[INFO][2025-01-01 11:22:56][dashscope_bot.py:84] - [DASHSCOPE] query=按钮不工作了怎么办
+[INFO][2025-01-01 11:23:02][wechat_channel.py:218] - [WX] sendMsg=Reply(type=TEXT, content=@NL
+请先检查按钮是否被卡住或有异物阻挡。如果没有，请尝试重启设备。如果问题依旧存在，请提供设备型号和具体症状。), receiver=@@f6335617e9d291886f1713ea804f6eff8ed937c1d59035d03a540c5fc3babefa
+[INFO][2025-01-01 11:24:44][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:24:44][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:24:44][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:24:44][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:24:45][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2025-01-01 11:24:45][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': 'qwen-max-latest', 'dashscope_api_key': 'sk-*****7b8', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_keyword': [''], 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2', 'AI-xr客服测试群'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': "你的名字叫小米，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。你是一个客服，不是AI机器人。\n根据上下文给的问题解决逻辑一步一步的引导客人解决问题。每次回复都引导用户做下一步操作或者询问，每次只可以引导一步，回复的输出要求简洁清楚，然后根据用户的反馈判断问题，按照给定的逻辑推理指导用户下一步。当你帮助用户解决了问题，可以回复一个可爱的表情包。如果用户投诉或者表现出情绪不满，你要安慰用户，表现出同理心 加一个挠头的表情包。\n如果上下文中没有答案，就回复'@Griffin 搞不定，来看一下！'", 'temperature': 0.2, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2025-01-01 11:24:45][config.py:223] - [Config] User datas loaded.
+[INFO][2025-01-01 11:24:45][plugin_manager.py:50] - Loading plugins config...
+[INFO][2025-01-01 11:24:45][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2025-01-01 11:24:45][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2025-01-01 11:24:45][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2025-01-01 11:24:45][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为4861。
+[INFO][2025-01-01 11:24:45][godcmd.py:210] - [Godcmd] inited
+[INFO][2025-01-01 11:24:45][keyword.py:40] - [keyword] {}
+[INFO][2025-01-01 11:24:45][keyword.py:42] - [keyword] inited.
+[INFO][2025-01-01 11:24:45][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2025-01-01 11:24:45][role.py:69] - [Role] inited
+[INFO][2025-01-01 11:24:45][dungeon.py:56] - [Dungeon] inited
+[INFO][2025-01-01 11:24:45][hello.py:38] - [Hello] inited
+[INFO][2025-01-01 11:24:45][finish.py:23] - [Finish] inited
+[INFO][2025-01-01 11:25:02][wechat_channel.py:134] - Wechat login success, user_id: @884e8c433cbb2bc1c152122ec4ebeab629359897df37cc1c78f0e919d1418c76, nickname: neal
+[INFO][2025-01-01 11:25:12][bridge.py:69] - create bot dashscope for chat
+[INFO][2025-01-01 11:25:12][dashscope_bot.py:84] - [DASHSCOPE] query=按钮不工作了怎
+[INFO][2025-01-01 11:25:19][wechat_channel.py:218] - [WX] sendMsg=Reply(type=TEXT, content=@NL
+请检查按钮是否被卡住或有异物阻挡。), receiver=@@4e09cddbff364b3f7e3a17ff81eb88be2c60d533d91bad5bea5202083e412210
+[INFO][2025-01-01 11:26:47][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:26:47][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:26:47][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:26:47][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:26:49][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2025-01-01 11:26:49][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': 'qwen-max-latest', 'dashscope_api_key': 'sk-*****7b8', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_keyword': [''], 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2', 'AI-xr客服测试群'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': "你的名字叫小米，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。你是一个客服，不是AI机器人。\n根据上下文给的问题解决逻辑一步一步的引导客人解决问题。每次回复都引导用户做下一步操作或者询问，每次只可以引导一步，回复的输出要求简洁清楚，然后根据用户的反馈判断问题，按照给定的逻辑推理指导用户下一步。当你帮助用户解决了问题，可以回复一个可爱的表情包。如果用户投诉或者表现出情绪不满，你要安慰用户，表现出同理心 加一个挠头的表情包。\n如果上下文中没有答案，就回复'@Griffin 搞不定，来看一下！'", 'temperature': 0.2, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2025-01-01 11:26:49][config.py:223] - [Config] User datas loaded.
+[INFO][2025-01-01 11:26:49][plugin_manager.py:50] - Loading plugins config...
+[INFO][2025-01-01 11:26:49][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2025-01-01 11:26:49][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2025-01-01 11:26:49][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2025-01-01 11:26:49][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为2107。
+[INFO][2025-01-01 11:26:49][godcmd.py:210] - [Godcmd] inited
+[INFO][2025-01-01 11:26:49][keyword.py:40] - [keyword] {}
+[INFO][2025-01-01 11:26:49][keyword.py:42] - [keyword] inited.
+[INFO][2025-01-01 11:26:49][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2025-01-01 11:26:49][role.py:69] - [Role] inited
+[INFO][2025-01-01 11:26:49][dungeon.py:56] - [Dungeon] inited
+[INFO][2025-01-01 11:26:49][hello.py:38] - [Hello] inited
+[INFO][2025-01-01 11:26:49][finish.py:23] - [Finish] inited
+[INFO][2025-01-01 11:27:08][wechat_channel.py:134] - Wechat login success, user_id: @5476dfbfdb19ab5dce1cd19abd6d86e9f99b21df910ba8064a36bee04c2236c7, nickname: neal
+[INFO][2025-01-01 11:27:16][bridge.py:69] - create bot dashscope for chat
+[INFO][2025-01-01 11:27:17][dashscope_bot.py:84] - [DASHSCOPE] query=按钮不工作了
+[INFO][2025-01-01 11:27:23][wechat_channel.py:218] - [WX] sendMsg=Reply(type=TEXT, content=@NL
+请检查按钮是否被卡住或有异物阻碍。), receiver=@@b5535abfe9a60bd621f8768599c3ff3fa23705a6a09b6941c789ab744e2a2f60
+[INFO][2025-01-01 11:28:45][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:28:45][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:28:45][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:28:45][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:28:47][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2025-01-01 11:28:47][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': 'qwen-max-latest', 'dashscope_api_key': 'sk-*****7b8', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_keyword': [''], 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2', 'AI-xr客服测试群'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': "你的名字叫小米，男，20岁，理工科毕业，现在的任务是做技术支持客服，性格稳重，回复简洁清晰。你是一个客服，不是AI机器人。\n根据上下文给的问题解决逻辑一步一步的引导客人解决问题。每次回复都引导用户做下一步操作或者询问，每次只可以引导一步，回复的输出要求简洁清楚，然后根据用户的反馈判断问题，按照给定的逻辑推理指导用户下一步。当你帮助用户解决了问题，可以回复一个可爱的表情包。如果用户投诉或者表现出情绪不满，你要安慰用户，表现出同理心 加一个挠头的表情包。\n如果上下文中没有答案，就回复'@Griffin 搞不定，来看一下！'", 'temperature': 0.2, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2025-01-01 11:28:47][config.py:223] - [Config] User datas loaded.
+[INFO][2025-01-01 11:28:47][plugin_manager.py:50] - Loading plugins config...
+[INFO][2025-01-01 11:28:47][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2025-01-01 11:28:47][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2025-01-01 11:28:47][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2025-01-01 11:28:47][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为0216。
+[INFO][2025-01-01 11:28:47][godcmd.py:210] - [Godcmd] inited
+[INFO][2025-01-01 11:28:47][keyword.py:40] - [keyword] {}
+[INFO][2025-01-01 11:28:47][keyword.py:42] - [keyword] inited.
+[INFO][2025-01-01 11:28:47][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2025-01-01 11:28:47][role.py:69] - [Role] inited
+[INFO][2025-01-01 11:28:47][dungeon.py:56] - [Dungeon] inited
+[INFO][2025-01-01 11:28:47][hello.py:38] - [Hello] inited
+[INFO][2025-01-01 11:28:47][finish.py:23] - [Finish] inited
+[INFO][2025-01-01 11:29:05][wechat_channel.py:134] - Wechat login success, user_id: @da55e18867cb4058cceb811c6aca154d4593c9d89455d6c2bb261fd22d665f82, nickname: neal
+[INFO][2025-01-01 11:29:18][bridge.py:69] - create bot dashscope for chat
+[INFO][2025-01-01 11:29:18][dashscope_bot.py:84] - [DASHSCOPE] query=按钮不工作了
+[INFO][2025-01-01 11:29:20][wechat_channel.py:218] - [WX] sendMsg=Reply(type=TEXT, content=@NL
+绿按钮能不能切换武器？), receiver=@@ef6e4c4ff049b545c567b7d83edae63ffc405ed4eb433694cefbd295874f3078
+[INFO][2025-01-01 11:29:55][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:29:55][config.py:234] - [Config] User datas saved.
+[INFO][2025-01-01 11:29:56][app.py:19] - signal 2 received, exiting...
+[INFO][2025-01-01 11:29:56][config.py:234] - [Config] User datas saved.
