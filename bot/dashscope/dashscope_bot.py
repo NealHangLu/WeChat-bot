@@ -196,7 +196,8 @@ class DashscopeBot(Bot):
 
 import requests
 import json
-
+import os
+kburl = os.environ.get("kburl", "http://kb:5601")  # Default value if not set
 def query_with_context(query):
     """
     Queries the Flask app for a given query and returns the result with context.
@@ -207,11 +208,13 @@ def query_with_context(query):
         there was an issue with the request or the Flask app returned an error.
     """
     try:
-        url = "http://kb:5601/query?text=" + query  # Adjust URL if needed
+        #url = "http://kb:5601/query?text=" + query  # Adjust URL if needed
         #url = "http://127.0.0.1:5601/query?text=" + query
+        url = kburl+"/query?text=" + query
         response = requests.get(url)
         response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
         data = response.json()
+        logger.debug("kb search result: ".format(data))
         if 'error' in data:
             return {"query": query, "context": "None","error": data['error']}
         return {"query": query, "context": data['result'],"error": "None"}
